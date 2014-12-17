@@ -1,0 +1,103 @@
+@import url(//fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans:400,700);
+
+body {
+    background: url(images/texture-lightgreen.jpg) center top repeat scroll !important;
+    font-weight: 300;
+}
+
+a {
+    color: #5badd1;
+}
+a:hover {
+    color: #ac5027;
+}
+
+.sub-nav dd a, .sub-nav dt a, .sub-nav li a {
+    color: #5badd1;
+    font-family: 'Oswald', sans-serif !important;
+    text-transform: uppercase;
+}
+.sub-nav dd a:hover, .sub-nav dt a:hover, .sub-nav li a:hover {
+    color: #ac5027;
+}
+
+#page {
+    font-size: 1.125em;
+}
+#page, 
+#page * {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.site-header {
+    background: url(images/texture-lightblue.jpg) center center repeat scroll !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif !important;
+}
+.section-heading {
+    display: inline-block;
+    padding: 0.375rem 0.5rem;
+    background: url(images/texture-red.jpg) center center repeat scroll !important;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    word-spacing: 0.125rem;
+}
+
+.project-section-shareabouts > div {
+    padding-bottom: 0;
+}
+.project-shareabouts {
+    border-bottom: 2px solid #d4dfb9;
+}
+
+.site-colophon {
+    background: url(images/texture-red.jpg) center center repeat scroll !important;
+    color: #fff;
+}
+.site-colophon a, .site-colophon a:link, .site-colophon a:visited {
+    color: #b0daf3;
+}
+.site-colophon a:hover {
+    text-decoration: underline;
+}
+
+/* Swap Instagram for Flickr in header */
+.social-link:first-child + .social-link img {
+  display: none;
+}
+.social-link:first-child + .social-link:before {
+  content: url(images/social-flickr-40.gif);
+}
+
+/* Swap Instagram for Flickr in footer */
+.social-links-section .columns:first-child + .columns .panel img,
+.social-links-section .columns:first-child + .columns .panel h4 {
+    display: none;
+}
+.social-links-section .columns:first-child + .columns .panel:before {
+    content: url(images/social-flickr.gif);
+    margin-bottom: .9375rem;
+    display: inline-block;
+    height: 110px;
+}
+.social-links-section .columns:first-child + .columns .panel:after {
+    content: 'View our pics on Flickr!';
+    display: block;
+    max-width: 5.75em;
+    line-height: 1;
+    font-size: 1.125rem;
+    text-rendering: optimizeLegibility;
+    margin: .2rem auto 0;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif !important;
+}
+@media only screen and (min-width: 40.063em) {
+  .social-links-section .columns:first-child + .columns .panel:after {
+    font-size: 1.4375rem;
+  }
+}
